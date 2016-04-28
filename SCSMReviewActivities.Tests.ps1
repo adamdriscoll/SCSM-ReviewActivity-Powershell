@@ -23,6 +23,7 @@ if ($psVersion.Major -ge 5)
 {
     Write-Verbose -Verbose "Installing PSScriptAnalyzer"
     $PSScriptAnalyzerModuleName = "PSScriptAnalyzer"
+    Install-PackageProvider -Name NuGet -Force 
     Install-Module -Name $PSScriptAnalyzerModuleName -Scope CurrentUser -Force 
     $PSScriptAnalyzerModule = get-module -Name $PSScriptAnalyzerModuleName -ListAvailable
     if ($PSScriptAnalyzerModule) {
