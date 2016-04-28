@@ -1,7 +1,7 @@
 #Requires -Modules Pester
 <#
 .SYNOPSIS
-    Tests the AzureRateCard module
+    Tests the SCSMReviewActivities module
 .EXAMPLE
     Invoke-Pester 
 .NOTES
