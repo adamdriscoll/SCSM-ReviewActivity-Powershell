@@ -1,4 +1,5 @@
 version: 1.0.{build}
+image: WMF 5
 install:
 - ps: cinst pester
 build_script:
