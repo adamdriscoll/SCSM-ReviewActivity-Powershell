@@ -1,0 +1,3 @@
+version: 1.0.{build}
+build_script:
+- ps: New-ModuleManifest -ModuleVersion 1.0 -Path .\SCSMReviewActivities.psd1 -Author 'Rob Plank' -Company '' -Description 'Advanced SCSM Reveiw Activity cmdlets ' -RootModule '.\SCSMReviewActivities.psm1' -FunctionsToExport Get-SCSMActivityReviewer, Add-SCSMActivityReviewer, Remove-SCSMActivityReviewer, Update-SCSMActivityReviewer
